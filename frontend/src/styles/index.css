@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #f6eef4;
+  --color-brand-100: #ecd9e6;
+  --color-brand-200: #d9b3ce;
+  --color-brand-300: #b884ab;
+  --color-brand-400: #a06690;
+  --color-brand-500: #814a76;
+  --color-brand-600: #570d48;
+  --color-brand-700: #4a0b3d;
+  --color-brand-800: #3a0930;
+  --color-brand-900: #2b0724;
+  --color-brand-light: #6c2b5f;
+
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+/* Shared transition timing so "smooth 200-300ms" is consistent
+   everywhere instead of every component picking its own duration. */
+.transition-base {
+  transition: all 220ms ease;
+}
